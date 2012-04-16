@@ -55,7 +55,6 @@
 
     $.getJSON('https://api.github.com/users/' + userName + '/gists?type=public&callback=?', function (result) {
         var gists = result.data;
-        console.log(gists);
         $(function () {
             $('#num-gists').text(gists.length);
         });
